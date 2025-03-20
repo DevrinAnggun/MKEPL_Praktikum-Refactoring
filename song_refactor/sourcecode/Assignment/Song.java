@@ -1,4 +1,4 @@
-package Assignment.models;
+package Assignment;
 
 public class Song {
     private String id;
@@ -6,8 +6,8 @@ public class Song {
     private String releaseYear;
     private String musicFileURL;
     private Genre genre;
-    private Artist artist;
     private Album album;
+    private Artist artist;
 
     public Song(String id, String title, String releaseYear, String musicFileURL) {
         this.id = id;
@@ -17,29 +17,27 @@ public class Song {
         this.genre = Genre.UNDEFINED;
     }
 
-    public void setArtist(Artist artist) {
-        this.artist = artist;
-    }
-
     public void setAlbum(Album album) {
         this.album = album;
+    }
+
+    public void setArtist(Artist artist) {
+        this.artist = artist;
     }
 
     public void setGenre(Genre genre) {
         this.genre = genre;
     }
 
-    public void printInfo(int detailLevel) {
-        System.out.println("Song Title: " + title);
-        System.out.println("Release Year: " + releaseYear);
-        if (genre != Genre.UNDEFINED) {
-            System.out.println("Genre: " + genre);
+    public void printInfo() {
+        System.out.println("Song title: " + title);
+        System.out.println("Release year: " + releaseYear);
+        System.out.println("Genre: " + genre);
+        if (artist != null) {
+            System.out.println("Artist: " + artist.getName() + " (aka " + artist.getAlias() + ")");
         }
-        if (detailLevel >= 1 && artist != null) {
-            System.out.println(artist.getArtistInfo());
-        }
-        if (detailLevel >= 2 && album != null) {
-            System.out.println(album.getAlbumInfo());
+        if (album != null) {
+            System.out.println("Album: " + album.getName());
         }
     }
 }

@@ -1,4 +1,4 @@
-package Assignment.models;
+package Assignment;
 
 public class Album {
     private String name;
@@ -9,7 +9,11 @@ public class Album {
         this.coverURL = coverURL;
     }
 
-    public String getAlbumInfo() {
-        return "Album: " + name;
+    public String getName() {
+        return name;
+    }
+
+    public String getCoverURL() {
+        return coverURL;
     }
 }

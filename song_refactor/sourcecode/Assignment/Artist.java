@@ -1,4 +1,4 @@
-package Assignment.models;
+package Assignment;
 
 public class Artist {
     private String name;
@@ -11,7 +11,15 @@ public class Artist {
         this.imageURL = imageURL;
     }
 
-    public String getArtistInfo() {
-        return "Artist: " + name + (alias.isEmpty() ? "" : " (Also known as: " + alias + ")");
+    public String getName() {
+        return name;
+    }
+
+    public String getAlias() {
+        return alias;
+    }
+
+    public String getImageURL() {
+        return imageURL;
     }
 }
