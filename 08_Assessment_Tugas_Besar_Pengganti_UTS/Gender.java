@@ -1,4 +1,4 @@
-//sebelum refactoring
+// //sebelum refactoring
 private String jenisKelamin;
 
 public String getJenisKelamin() {
