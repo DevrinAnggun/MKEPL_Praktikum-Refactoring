@@ -51,6 +51,18 @@ public class HotelRoomBooking {
 
     }
 
+    // sebelum refactoring 
+    public void kirimEmailKonfirmasi() {
+        // Tidak ada implementasi
+    }
+    
+    public void redeemVoucher(String kode) {
+        // Tidak ada implementasi
+    }
+
+    // sesudah refactoring 
+    // Menghapus metode yang tidak diperlukan
+
     public double hitungTotalBiaya() {
         double total = booking.getHargaPerMalam() * booking.getJumlahMalam();
         if (booking.getJumlahTamu() > 2) {
