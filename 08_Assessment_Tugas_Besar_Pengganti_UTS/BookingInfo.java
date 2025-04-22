@@ -1,5 +1,18 @@
 import java.util.Date;
+// sebelum refactor
+public class BookingInfo {
+    public RoomType jenisKamar;
+    public int jumlahTamu;
+    public int jumlahMalam;
+    public double hargaPerMalam;
+    public Date tanggalCheckin;
+    public Date tanggalCheckout;
+    public String kodeVoucher;
+    public boolean sudahDibayar;
+    public boolean statusAktif;
+}
 
+// sesudah refactor
 public class BookingInfo {
     private RoomType jenisKamar;
     private int jumlahTamu;

@@ -1,3 +1,13 @@
+// sebelum refactor
+public class Customer {
+    public String nama;
+    public String nomorKTP;
+    public String nomorTelepon;
+    public String email;
+    public Gender jenisKelamin;
+}
+
+// sesudah refactor
 public class Customer {
     private String nama;
     private String nomorKTP;
