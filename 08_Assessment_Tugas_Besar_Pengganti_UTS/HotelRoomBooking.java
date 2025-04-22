@@ -1,3 +1,10 @@
+// sebelum refactor
+// public HotelRoomBooking(String namaPemesan, String nomorKTP, String nomorTelepon, String email, 
+//                         String jenisKelamin, String jenisKamar, int jumlahTamu, int jumlahMalam, 
+//                         double hargaPerMalam, Date tanggalCheckin, Date tanggalCheckout, 
+//                         boolean statusAktif, String kodeVoucher, boolean sudahDibayar)
+
+// sesudah refactor                      
 public class HotelRoomBooking {
 
     private Customer customer;
